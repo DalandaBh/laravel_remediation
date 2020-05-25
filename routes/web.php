@@ -23,7 +23,19 @@ Route::get('/remedi', function(){
 });
 
 Route::get('/remediation', function(){
-    return view('remediation');
+
+    $nom = 'Dalanda';
+    $sujet =' Laravel Remediation';
+    return view('remediation', ['nom'=>'Dalanda','sujet'=>'Laravel Remediation']);
+});
+
+Route::get('/test', function(){
+    
+    return view('test');
+});
+
+Route::get('/hello', function(){
+    return view('hello');
 });
 
 Auth::routes();
