@@ -22,6 +22,10 @@ Route::get('/remedi', function(){
     return ('Welcome to laravel remediation '.$nom);
 });
 
+Route::get('/remediation', function(){
+    return view('remediation');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
